@@ -1,3 +1,37 @@
-#content {
-    background: "/dist/imgs/hamburger.jpg";
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.borger {
+    height: 100px;
+    width: 100px;
+}
+
+ul {
+    font-size: larger;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 25px;
+}
+
+h1 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
