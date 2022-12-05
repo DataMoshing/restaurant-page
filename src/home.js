@@ -1,19 +1,36 @@
 const displayData = () => {
     const content = document.getElementById("content");
-    const header = document.createElement("h1");
-    header.textContent = "Super cool restaurant";
+    const header = document.createElement("header");
+    const nav = document.createElement("nav");
+    const headerUl = document.createElement("ul");
+    const homeLi = document.createElement("li");
+    const menuLi = document.createElement("li");
+    const contactLi = document.createElement("li");
+    const mainHeading = document.createElement("h1");
 
-    const testText = document.createElement("p");
-    testText.textContent = "This restaurant is so cool and awesome!!";
+    homeLi.textContent = "Home";
+    homeLi.className = "home";
+
+    menuLi.textContent = "Menu";
+    menuLi.className = "menu";
+
+    contactLi.textContent = "Contact";
+    contactLi.className = "contact"
+    headerUl.append(homeLi, menuLi, contactLi);
+
+    mainHeading.textContent = "Lon Lon Cafe";
 
     const hamburgerImg = new Image();
     hamburgerImg.src = "/src/imgs/hamburger.jpg";
     hamburgerImg.className = "borger"
 
+
+    nav.append(headerUl);
+    header.append(nav)
     content.append(header);
-    content.append(testText);
+    content.append(mainHeading);
     content.append(hamburgerImg);
-    document.body.append(content)
+    document.body.append(header, content)
 }
 
 export { displayData }
