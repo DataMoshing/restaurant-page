@@ -1,4 +1,5 @@
-import { displayData } from "./home.js";
+import { mainHeader, mainContent } from "./home.js";
 import "./style.css";
 
-displayData()
+mainHeader()
+mainContent()
