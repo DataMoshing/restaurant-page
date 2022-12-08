@@ -11,7 +11,16 @@
 }
 
 body {
+    display: grid;
+    justify-items: center;
     font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+#content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
 }
 
 .borger {
@@ -29,9 +38,49 @@ ul {
     margin: 25px;
 }
 
-h1 {
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-heading {
     font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 30px;
+}
+
+.main-description {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1rem 0 0 1rem;
+}
+
+.main-schedule-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.main-schedule-div>p {
+    padding-top: .5rem;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.review-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    margin-top: 1rem;
+}
+
+.review-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
 }
