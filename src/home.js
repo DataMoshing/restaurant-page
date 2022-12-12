@@ -8,6 +8,7 @@ const mainHeader = () => {
     const nav = document.createElement("nav");
     const headerUl = document.createElement("ul");
     const topHeading = document.createElement("h1");
+    const headingDiv = document.createElement("div");
 
     homeLi.textContent = "Home";
     homeLi.className = "home";
@@ -19,20 +20,24 @@ const mainHeader = () => {
     contactLi.className = "contact"
     headerUl.append(homeLi, menuLi, contactLi);
 
-    topHeading.textContent = "Lon Lon Cafe";
+    topHeading.textContent = "Lon Lon Cafe  ";
     topHeading.classList = "top-heading";
+    headingDiv.className = "header-div";
+
+    const bubbleTea = new Image();
+    bubbleTea.src = "/src/imgs/bubble-tea-svgrepo-com.svg"
+    bubbleTea.className = "bubble-tea";
 
     const hamburgerImg = new Image();
     hamburgerImg.src = "/src/imgs/hamburger.jpg";
     hamburgerImg.className = "borger"
 
-
     nav.append(headerUl);
     header.append(nav)
     content.append(header);
-    nav.append(topHeading);
-    content.append(hamburgerImg);
-    document.body.append(header, content)
+    content.append(headingDiv);
+    headingDiv.append(topHeading, bubbleTea, hamburgerImg);
+    document.body.append(header, content, headingDiv)
 }
 
 const mainContent = () => {
@@ -48,6 +53,8 @@ const mainContent = () => {
     const weekday_5 = document.createElement("p");
     const weekend_1 = document.createElement("p");
     const weekend_2 = document.createElement("p");
+
+
 
     mainDescription.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
@@ -83,6 +90,7 @@ const mainContent = () => {
 
     reviewPlaceholder_4.textContent = "Ut tristique et egestas quis ipsum suspendisse ultrices."
 
+    // content.append(hamburgerImg);
     content.append(mainDiv);
     mainDiv.append(mainDescription);
     content.append(mainScheduleDiv);
