@@ -23,19 +23,40 @@ body {
     max-width: 700px;
 }
 
+button {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    color: #121212;
+    cursor: pointer;
+    font-size: 1.2rem;
+    justify-content: center;
+    line-height: 1;
+    padding: .7rem .7rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s, -webkit-box-shadow .2s;
+}
+
+button:hover {
+    box-shadow: #121212 0 0 0 2px, transparent 0 0 0 0;
+}
+
 .borger {
     height: 100px;
     width: 100px;
 }
 
 ul {
-    font-size: larger;
+    font-size: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 25px;
-    margin: 25px;
+    margin: 15px;
 }
 
 nav {
@@ -75,7 +96,8 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px;
-    margin-top: 1rem;
+    margin: 1rem 0 0 1rem;
+
 }
 
 .review-header {
