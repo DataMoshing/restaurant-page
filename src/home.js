@@ -1,11 +1,12 @@
+const content = document.getElementById("content");
+const homeLi = document.createElement("button");
+const menuLi = document.createElement("button");
+const contactLi = document.createElement("button");
+
 const mainHeader = () => {
-    const content = document.getElementById("content");
     const header = document.createElement("header");
     const nav = document.createElement("nav");
     const headerUl = document.createElement("ul");
-    const homeLi = document.createElement("li");
-    const menuLi = document.createElement("li");
-    const contactLi = document.createElement("li");
     const topHeading = document.createElement("h1");
 
     homeLi.textContent = "Home";
@@ -93,4 +94,4 @@ const mainContent = () => {
     document.body.append(content)
 }
 
-export { mainHeader, mainContent }
+export { mainHeader, mainContent, menuLi, homeLi, contactLi, content }
