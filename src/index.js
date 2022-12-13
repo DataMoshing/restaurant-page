@@ -1,6 +1,6 @@
 import { mainHeader, mainContent, menuLi, homeLi, contactLi, content, } from "./home.js";
 import { menuContent } from "./menu.js";
-import { test } from "./contact.js";
+import { contactContent } from "./contact.js";
 import "./style.css";
 
 
@@ -16,7 +16,7 @@ menuLi.addEventListener("click", () => {
 
 contactLi.addEventListener("click", () => {
     content.textContent = ""
-    test()
+    contactContent()
 })
 
 mainHeader()
