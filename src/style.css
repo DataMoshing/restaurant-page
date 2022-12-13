@@ -169,11 +169,12 @@ nav {
 
 .contact-div {
     background-color: #ddcea5ce;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     flex-direction: column;
     margin-top: 10rem;
     max-width: 700px;
-    border: #121212 1px solid;
+    /* border: #121212 1px solid; */
     border-radius: .5rem;
     padding: 1rem;
 }
