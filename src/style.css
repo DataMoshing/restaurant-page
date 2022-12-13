@@ -126,8 +126,6 @@ nav {
 .coffee-header-div,
 .not-coffee-div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
     align-items: start;
     margin-bottom: 1rem;
 }
@@ -137,7 +135,6 @@ nav {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin-bottom: 1rem;
-    /* justify-content: space-between; */
 }
 
 .drink-price {
@@ -168,4 +165,36 @@ nav {
 
 .food-header {
     background-color: #ebcf83e8;
+}
+
+.contact-div {
+    background-color: #ddcea5ce;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    max-width: 700px;
+    border: #121212 1px solid;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-div,
+.email-div,
+.number-div {
+    display: grid;
+    grid-template-columns: 35px 80px 260px;
+    padding: .5rem;
+}
+
+.email-svg,
+.location-svg,
+.number-svg {
+    height: 30px;
+    width: 30px;
 }
