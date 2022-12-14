@@ -3,6 +3,7 @@ import { menuContent } from "./menu.js";
 import { contactContent } from "./contact.js";
 import "./style.css";
 
+
 homeLi.addEventListener("click", () => {
     content.textContent = ""
     mainContent()
