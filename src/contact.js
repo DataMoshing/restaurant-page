@@ -14,17 +14,17 @@ const contactContent = () => {
     const numberPlaceholder = document.createElement("p");
 
     const emailSVG = new Image();
-    emailSVG.src = "../src/imgs/email-svgrepo-com.svg"
+    emailSVG.src = "/src/imgs/email-svgrepo-com.svg"
     emailSVG.className = "email-svg";
     emailPlaceholer.classList = "placeholder"
 
     const locationSVG = new Image();
-    locationSVG.src = "../src/imgs/location-svgrepo-com.svg"
+    locationSVG.src = "/src/imgs/location-svgrepo-com.svg"
     locationSVG.className = "location-svg";
     locationPlaceholder.classList = "placeholder";
 
     const numberSVG = new Image();
-    numberSVG.src = "../src/imgs/phone-svgrepo-com.svg"
+    numberSVG.src = "/src/imgs/phone-svgrepo-com.svg"
     numberSVG.className = "number-svg";
     numberPlaceholder.classList = "placeholder";
 
