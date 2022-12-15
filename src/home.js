@@ -25,11 +25,11 @@ const mainHeader = () => {
     headingDiv.className = "header-div";
 
     const bubbleTea = new Image();
-    bubbleTea.src = "../src/imgs/bubble-tea-svgrepo-com.svg"
+    bubbleTea.src = "imgs/bubble-tea-svgrepo-com.svg"
     bubbleTea.className = "bubble-tea";
 
     const hamburgerImg = new Image();
-    hamburgerImg.src = "../src/imgs/hamburger.jpg";
+    hamburgerImg.src = "imgs/hamburger.jpg";
     hamburgerImg.className = "borger"
     nav.append(headerUl);
     header.append(nav)
